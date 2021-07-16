@@ -1,0 +1,50 @@
+body{ max-width: 1024px; margin: auto;}
+a { color: black; }
+
+.item1 { grid-area: Sitename;  background-color: orange; text-align: left; font-size: 25px; padding: 15px;} 
+.item2 { grid-area: Menuitem1; background-color: rgb(90, 90, 216); text-align: center; font-size: 15px; padding: 20px; } 
+.item3 { grid-area: Menuitem2; background-color: rgb(90, 90, 216); text-align: center; font-size: 15px; padding: 20px; }  
+.item4 { grid-area: Menuitem3; background-color: rgb(90, 90, 212); text-align: center; font-size: 15px; padding: 20px; } 
+.item5 { grid-area: Spaace;    background-color: orange;   }  
+.item6 { grid-area: Login;     background-color: lightblue; text-align: center; padding: 20px; font-style: italic; } 
+.inner-grid1 { grid-area: Container; background-color: lightyellow;} 
+.aaa { grid-area: aa; font-size: 15px; padding: 20px 40px; margin: auto; border: black 1px solid; }  
+.bbb { grid-area: bb; font-size: 15px; padding: 60px;  border: black 1px solid;} 
+.ccc { grid-area: cc; font-size: 15px; padding: 150px; border: black 1px solid; } 
+.ddd { grid-area: dd; font-size: 15px; padding: 150px; border: black 1px solid;}
+.eee { grid-area: ee; font-size: 15px; padding: 50px 50px 150px 50px; margin: auto;  border: black 1px solid;}
+.inner-grid2 { grid-area: Aside;     background-color: lightgreen;  }     
+.item9 { grid-area: Footer;    }
+
+.grid-container1 {
+  display: grid;
+  grid-template-areas: 'Sitename Sitename Menuitem1 Menuitem2 Menuitem3 Spaace Spaace Spaace Login';
+  grid-gap: 2px; background-color: black; padding: 2px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-areas: 'Container Container Container Container Container Container Aside Aside Aside';
+  grid-gap: 2px; background-color: black; padding: 2px;
+}
+.grid-container2 > div { text-align: center; padding: 20px 10px;  font-size: 30px; }
+
+.grid-container3 {
+  display: grid;
+  grid-template-areas: 'Footer Footer Footer Footer Footer Footer Footer Footer Footer';
+  grid-gap: 2px; background-color: black; padding: 2px;
+}
+.grid-container3 > div { background-color: purple; text-align: center;   font-size: 15px; }
+
+.inner-grid1       {  display: grid;     grid-template-areas: 
+  'aa aa aa aa'
+  'bb bb bb bb'
+  'cc cc dd dd';  
+  grid-gap: 30px; }
+.inner-grid1 > div {   background: lightblue;    }
+
+.inner-grid2       {  display: grid;   
+  grid-template-areas: 
+  'ee ee ee ee';  
+  grid-gap: 20px; }
+.inner-grid2 > div {   background: lightblue;    }

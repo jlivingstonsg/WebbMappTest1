@@ -1,10 +1,9 @@
-body{ max-width: 1024px; margin: auto;}
+body{ font-family: sans-serif; max-width: 1024px; margin: auto;}
 a { color: black; }
 img, .pic2 { grid-area: pic2; background-color: lightblue; max-width: 50px; max-height: 50px; }
 h4 { font-size: 10px; text-align: left; }
 /*set size of text to 20  */
 .item21 h4, ul, li { grid-area: Aside1; font-size: 10px; }
-
 .item1 { grid-area: Sitename;  background-color: orange; text-align: left; font-size: 25px; padding: 15px;} 
 .item2 { grid-area: Menuitem1; background-color: rgb(90, 90, 216); text-align: center; font-size: 15px; padding: 20px; } 
 .item3 { grid-area: Menuitem2; background-color: rgb(90, 90, 216); text-align: center; font-size: 15px; padding: 20px; }  
@@ -14,9 +13,15 @@ h4 { font-size: 10px; text-align: left; }
 .inner-grid1 { grid-area: Container; background-color: lightyellow;} 
 .inner-grid1Login { grid-area: Container; background-color: lightyellow;} 
 .aaa {  font-size: 10px; padding: 20px 40px; margin: auto; border: black 1px solid; float: left;}  
-.aaaLogin {  font-size: 15px; padding: 20px 70px; margin: 20px 120px 1px 1px; border: black 1px solid; float: left;}  
+.aaaLogin { text-transform: uppercase; font-size: 15px; padding: 20px 70px; margin: 20px 120px 1px 1px; border: black 1px solid; float: left; background-color: lightblue;}  
 .bbb { grid-area: bb; font-size: 15px; padding: 60px;  border: black 1px solid;} 
-.bbbLogin { grid-area: bb; font-size: 15px; padding: 60px;  border: black 1px solid;} 
+.bbbLogin { border-radius: 25px; grid-area: bb; font-size: 15px; padding: 60px;  border: black 1px solid;} 
+
+.inputUserName { border-radius: 5px; background-color: white; font-size: 15px; padding: 10px 40px; margin: auto; border: black 1px solid; }
+.inputPassword { border-radius: 5px; background-color: white; font-size: 15px; padding: 10px 40px; margin: auto; border: black 1px solid; }
+.inputReset { border-radius: 5px; background-color: red; font-size: 15px; padding: 10px 40px ; margin: auto; border: black 1px solid; }
+.inputSignIn { border-radius: 5px; background-color: green; font-size: 15px; padding: 10px 40px; margin: auto; border: black 1px solid; }
+
 .ccc { grid-area: cc; font-size: 15px; padding: 20px; border: black 1px solid; } 
 .ddd { grid-area: dd; font-size: 15px; padding: 20px; border: black 1px solid;}
 .eee { grid-area: ee; font-size: 15px; padding: 10px 10px 10px 10px; margin: 0px 10px 220px 10px;  border: black 1px solid;}
